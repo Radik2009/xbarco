@@ -335,3 +335,34 @@ body {
 .sketchfab-credits a:hover {
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  #itensEscolhidos {
+    margin-bottom: 20px; /* dá espaço antes dos atributos */
+  }
+
+  .accordion-body .item {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .accordion-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    padding: 12px;
+  }
+
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+}
