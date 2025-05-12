@@ -218,7 +218,7 @@ ${itens}
 📧 Email: ${email}
 `.trim();
 
-  const numeroDestino = "5511983071425";
+  const numeroDestino = "55119520604860";
   const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
