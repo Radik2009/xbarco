@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background: linear-gradient(to bottom, #0044cc, #007bff); /* Degradê de azul */
+    color: white;
+    box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  .nav-links li:last-child {
+    margin-right: 20px; /* Adiciona espaçamento à direita */
+  }
+  .navbar .logo {
+    padding-left: 20px; /* Adiciona espaço à esquerda */
+  }
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+  
+  .navbar .logo h1 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #cccccc;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #002244;
+  }
+  
+/* Remove bordas ou margens indesejadas das imagens */
+/* Remove fundo, bordas e margens indesejadas das imagens */
+.imagem-curvos {
+  border-radius: 15px; /* Adiciona curvas nos 4 cantos das imagens */
+  overflow: hidden; /* Garante que o conteúdo da imagem respeite as bordas arredondadas */
+  box-shadow: none; /* Remove sombras, se houver */
+  width: 85%; /* Reduz o tamanho das imagens em 15% */
+  margin: 0px; /* Remove o espaço ao redor de cada imagem para aproximá-las em 100% */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Remove qualquer fundo ou borda do contêiner das imagens */
+#galeria-barcos .col-md-4,
+#galeria-barcos .col-md-6 {
+  background: none; /* Remove fundo */
+  border: none; /* Remove bordas */
+  padding: 0; /* Remove preenchimento */
+  margin: 0; /* Remove margens */
+}
+  .imagem-curvos:hover {
+    transform: scale(1.02);
+  }
+  
+  
+  #resumoEscolhas {
+    min-height: 200px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nav-links {
+      margin-top: 15px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .carousel-caption {
+      padding: 10px;
+    }
+    
+    .carousel-caption h2 {
+      font-size: 1.2rem;
+    }
+    
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .navbar .nav-links a {
+    color: white; /* Links em branco */
+    text-decoration: none; /* Remove o sublinhado */
+  }
+  
+  .navbar .nav-links a:hover {
+    color: lightblue; /* Links em azul claro ao passar o mouse */
+  }
+
+  /* Ajustar o tamanho das imagens do carrossel */
+.carousel-inner img {
+    max-height: 500px; /* Define uma altura máxima */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+  }
+
+  #comparativo {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 2rem; /* Aumenta o espaçamento inferior */
+}
+
+#comparativo .row {
+  justify-content: center; /* Centraliza os elementos dentro da linha */
+}
+
+#comparativo .col-md-6 {
+  max-width: 40%; /* Ajusta a largura das colunas para centralizar melhor */
+}
+/* Estilo para os títulos das seções */
+#monte-seu-barco h4 {
+  background: linear-gradient(to right, #0044cc, #007bff); /* Degradê horizontal de azul */
+  color: white; /* Letras brancas */
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer; /* Indica que é clicável */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+#monte-seu-barco h4:hover {
+  background: linear-gradient(to right, #003399, #0056b3); /* Degradê mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Estilo para as listas de itens */
+#monte-seu-barco ul {
+  list-style: none; /* Remove marcadores padrão */
+  padding: 15px 20px;
+  margin: 0;
+  background-color: rgba(240, 240, 240, 0.9); /* Fundo claro com transparência */
+  border-radius: 12px;
+  display: none; /* Oculta as listas inicialmente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  transition: all 0.3s ease; /* Efeito suave ao exibir */
+}
+
+#monte-seu-barco ul li {
+  margin-bottom: 12px; /* Espaçamento entre os itens */
+  font-size: 1rem; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  font-weight: 500; /* Peso intermediário */
+}
+
+#monte-seu-barco ul li:last-child {
+  margin-bottom: 0; /* Remove margem do último item */
+}
+
+#monte-seu-barco ul li:hover {
+  color: #007bff; /* Cor azul ao passar o mouse */
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo para os checkboxes e labels */
+#monte-seu-barco ul li input[type="checkbox"] {
+  appearance: none; /* Remove o estilo padrão */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff; /* Borda azul */
+  border-radius: 4px; /* Bordas levemente arredondadas */
+  background-color: white; /* Fundo branco */
+  cursor: pointer; /* Indica que é clicável */
+  transition: all 0.3s ease; /* Efeito suave ao interagir */
+}
+
+#monte-seu-barco ul li input[type="checkbox"]:checked {
+  background-color: #007bff; /* Fundo azul ao ser marcado */
+  border-color: #0056b3; /* Borda mais escura ao ser marcado */
+  position: relative;
+}
+
+#monte-seu-barco ul li input[type="checkbox"]:checked::after {
+  content: "✔"; /* Marca de verificação */
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+
+#monte-seu-barco ul li label {
+  color: #333; /* Cor do texto */
+  font-weight: bold;
+  cursor: pointer; /* Indica que é clicável */
+  margin-left: 8px; /* Espaçamento entre o checkbox e o texto */
+  transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+#monte-seu-barco ul li label:hover {
+  color: #007bff; /* Cor azul ao passar o mouse */
+}
+
+/* Estilo para os itens escolhidos */
+
+.item {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.item:hover {
+  background-color: #f0f0f0;
+}
+
+#itens-escolhidos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#itens-escolhidos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9ecef;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+#itens-escolhidos button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+#image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Estilo para maquete 3d */
+
+.lancha-3d-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 40px 20px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.lancha-3d-section:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.lancha-3d-section iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sketchfab-credits {
+  font-size: 13px;
+  color: #e0e0e0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sketchfab-credits a {
+  font-weight: bold;
+  color: #1CAAD9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sketchfab-credits a:hover {
+  color: #ffffff;
+}
