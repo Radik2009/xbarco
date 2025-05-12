@@ -336,6 +336,7 @@ body {
   color: #ffffff;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   #itensEscolhidos {
     margin-bottom: 20px; /* dá espaço antes dos atributos */
@@ -364,5 +365,23 @@ body {
 
   .accordion-item {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #galeria-barcos .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza as imagens na tela */
+  }
+
+  #galeria-barcos .col-md-4, #galeria-barcos .col-md-6 {
+    flex: 1 1 100%; /* Faz as colunas ocuparem 100% da largura disponível */
+    text-align: center; /* Alinha as imagens ao centro */
+  }
+
+  #galeria-barcos img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura da coluna */
+    height: auto;
   }
 }
